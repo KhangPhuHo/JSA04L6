@@ -1,0 +1,13 @@
+var city = 'Hà Nội';
+let age = 25;
+const PI = 3.14;
+let temperature = 25;
+let greeting = 'Good afternoon';
+let isJavaScriptFun = 'true';
+let nothing = null;
+var notDefined = undefined;
+const uniqueID = 100112;
+let numbers = 15;
+let person = 8587141;
+let greetingUppercase = 'GREETING';
+let greetingReplaced = 'GREETING';

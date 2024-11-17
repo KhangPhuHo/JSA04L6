@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #Menu{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            margin-left: -10px;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 10px;
+            align-items: center;
+            background-color: rgba(46, 46, 46, 0.911);
+            border-radius: 10px;
+            z-index: 1000;
+        }
+        #Menu a{
+            text-decoration: none;
+            color: white;
+        }
+        #Menu1 a{
+            padding-left: 20px;
+        }
+        #Menu1{
+          margin-right: 160px;
+        }
+        #Signin{
+            position: relative;
+            left: -15px;
+            background-color: rgb(49, 55, 56);
+            border-radius: 10px;
+        }
+        #Login{
+            position: relative;
+            left: -15px;
+            background-color: rgb(3, 37, 44);
+            border-radius: 10px;
+        }
+        form h2{
+            background-color: rgba(61, 54, 54, 0.911);
+            border-radius: 10px;
+            height: 35px;
+        }
+        form{
+            margin-top: 10%;
+            margin-left: 35%;
+            width: 400px;
+            height: 420px;
+            text-align: center;
+            background-color: rgba(61, 54, 54, 0.911);
+            border-radius: 10px;
+        }
+        form h3{
+            text-align: justify;
+            margin-left: 70px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            cursor: pointer;
+            color: grey;
+        }
+        input{
+            width: 230px;
+            height: 30px;
+        }
+        #Submit{
+            width: 200px;
+            height: 30px;
+            background-color: rgba(30, 29, 29, 0.719);
+            color: white;
+            border-radius: 10px;
+        }
+        #Submit:hover{
+            background-color: rgb(59, 51, 51);
+        }
+    </style>
+</head>
+<body>
+    <div id="Menu">
+        <p>
+          <h2 style="color: #ffffff;">IS<span style="color: #ffcc66">GameMarket</span></h2>
+        </p>
+          <p id="Menu1">
+              <a href="isgamemarket.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+              <a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> News</a>
+              <a href="market.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Market</a>
+              <a href="language.html"><i class="fa fa-globe" aria-hidden="true"></i> Language</a>
+              <a href="myaccount.html"><i class="fa fa-address-book-o" aria-hidden="true"></i> My Account</a>
+          </p>
+          <p>
+              <button id="Signin"><a href="signin.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign in</a></button>
+              <button id="Login"><a href="login.html"><i class="fa fa-sign-in" aria-hidden="true" style="color: #414345;"></i> Log in</a></button>
+          </p>
+      </div>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="1722969-uhd_3840_2160_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <form action="">
+        <h2>Log in</h2>
+        <h3>Username:</h3>
+        <label for="Username"><input type="text" placeholder="Enter Username" minlength="6" maxlength="18" required></label>
+        <h3>Password:</h3>
+        <label for="Password"><input type="password" placeholder="Enter Password" minlength="6" maxlength="18" required></label><br><br><br>
+        <input style="margin-top: 20px;" type="submit" id="Submit" value="Submit"><br><br><br>
+        <a href="http://127.0.0.1:5500/signin.html" style="position: relative; bottom: 25px;"> Click here if you don't have any account</a><br>
+        <a href="#Forgot"> Forgot password?</a>
+    </form>
+</body>
+</html>

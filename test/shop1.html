@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #Menu{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            margin-left: -10px;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 10px;
+            align-items: center;
+            background-color: rgb(32, 31, 31);
+            border-radius: 10px;
+            z-index: 1000;
+        }
+        #Menu a{
+            text-decoration: none;
+            color: white;
+        }
+        #Menu1 a{
+          padding-left: 20px;
+        }
+        #Menu1{
+          margin-right: 200px;
+        }
+        #Signin{
+          position: relative;
+            left: -15px;
+            background-color: rgb(49, 55, 56);
+            border-radius: 10px;
+        }
+        #Login{
+          position: relative;
+            left: -15px;
+            background-color: rgb(3, 37, 44);
+            border-radius: 10px;
+        }
+        #container2{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            margin-top: 100px;
+        }
+        #container2 a{
+            text-decoration: none;
+            color: #414345;
+            font-size: 12px;
+            width: 250px;
+        }
+        #container2 a p{
+            color: #ffcc66;
+        }
+        #container2 a p:hover{
+            color: #eca10c;
+        }
+        a img{
+            width: 220px;
+            border-radius: 10px;
+        }
+        a img:hover{
+            width: 260px;
+            height: 260px;
+        }
+        #container2 a button{
+            background-color: #ffcc66;
+            border-radius: 10px;
+        }
+        #container2 a button:hover{
+            background-color: rgb(242, 210, 152);
+        }
+        .container {
+          width: 100%;
+          height: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-top: 100px;
+          margin-right: auto;
+          margin-left: auto;
+          border-radius: 10px;
+        background: #232526;
+        background: -webkit-linear-gradient(to right, #414345, #232526);
+        background: linear-gradient(to right, #414345, #232526);
+        }
+        .image {
+          background-image: url("https://spaces.w3schools.com/images/iLNPS0N_6J4.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center; 
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          margin: 0 auto;
+          border: 5px solid #fdf5e6;
+        }
+        .w3-border {
+          border: 3px solid #ccc !important;
+        }
+        .contact {
+          text-align: center;
+          color: #fdf5e6;
+        }
+        .contact .info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 15px;
+        }
+
+        .contact .info span {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+        }
+
+        .bio {
+          font-size: 11px;
+          text-align: center;
+        }
+        @media screen and (min-width: 768px) {
+          .link {
+            width: 100%;
+          }
+        }
+        @media screen and (min-width: 576px) {
+          .container {
+            max-width: 540px;
+          }
+          .profession span {
+            font-size: 24px;
+          }
+          .bio {
+            font-size: 15px;
+          }
+        }
+        #icon{
+            text-align: center;
+        }
+        .icon{
+            color: black;
+        }
+        #footer{
+            text-align: center;
+        }
+        iframe{
+          border-radius: 20px;
+          margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="Menu">
+        <p>
+          <h2 style="color: #ffffff;">My<span style="color: #ffcc66">Market</span></h2>
+        </p>
+          <p id="Menu1">
+              <a href="#mymarket"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+              <a href="#news"><i class="fa fa-newspaper-o" aria-hidden="true"></i> News</a>
+              <a href="shop1.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Market</a>
+              <a href="#myaccount"><i class="fa fa-address-book-o" aria-hidden="true"></i> My Account</a>
+          </p>
+          <p>
+              <button id="Signin"><a href="#signin"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign in</a></button>
+              <button id="Login"><a href="#login"><i class="fa fa-sign-in" aria-hidden="true" style="color: #414345;"></i> Log in</a></button>
+          </p>
+      </div>
+      <div id="container2">
+        <a href="https://fado.vn/us/amazon/galaxy-watch-fe-40mm-bluetooth-ai-smartwatch-wfitness-tracking-bia-sensor-personalized-hr-zones-heart-rate-tracker-sleep-monitor-2024-black-us-version-1yr-manufacturer-warranty-B0D3216K2G.html">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71EHTkDQqfL._SR200,200_.jpg" alt="shopping">
+            <h3>Galaxy Watch FE</h3>
+            <p>$229.99</p>
+            <button>Buy now</button>
+        </a>
+        <a href="https://fado.vn/us/amazon/dyson-v15-detect-plus-cordless-vacuum-yellownickel-B0CT97D9R2.html">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61m8L2J6pQL.jpg" alt="shopping">
+            <h3>Dyson V15 Detect Plus Cordless Vacuum</h3>
+            <p>$699.99</p>
+            <button>Buy now</button>
+        </a>
+        <a href="https://fado.vn/us/amazon/ef-ecoflow-portable-power-station-river-2-pro-768wh-lifepo4-battery-70-min-fast-charging-4x800w-x-boost-1600w-ac-outlets-solar-generator-for-outdoor-campingrvshome-use-black-B0BVLPGS79.html">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61ooUabaG9L.jpg" alt="shopping">
+            <h3>EF ECOFLOW Portable Power Station</h3>
+            <p>$459.99</p>
+            <button>Buy now</button>
+        </a>
+        <a href="https://fado.vn/us/amazon/bedsure-heated-blanket-electric-throw-soft-flannel-electric-blanket-heating-blanket-with-4-time-settings-6-heat-settings-warm-blanket-gift-for-grandma-50x60-inches-grey-B0BZR6YBHK.html">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81iepp--tvL.jpg" alt="shopping">
+            <h3>Heated Blanket Electric Throw</h3>
+            <p>$45.99</p>
+            <button>Buy now</button>
+        </a>
+        <a href="https://www.ebay.com/itm/235393869947?chn=ps&norover=1&mkevt=1&mkrid=711-172466-740676-1&mkcid=2&itemid=235393869947&targetid=4580771615788968&device=c&mktype=&googleloc=&poi=&campaignid=485581172&mkgroupid=1234752623742361&rlsatarget=pla-4580771615788968&abcId=10002108&merchantid=3587003&msclkid=9f460589640b196913626287ef8d6e78">
+            <img style="height: 220px;" src="https://th.bing.com/th?&id=OVP.fTz4Lg3cEGQv0I7_iXp5pAHgFo&w=320&h=179&c=7&pid=2.1&rs=1" alt="shopping">
+            <h3>Apple Vision Pro 256 GB</h3>
+            <p>$4499.99</p>
+            <button>Buy now</button>
+        </a>
+        <a href="https://fado.vn/deluxe/alexander-mcqueen-white-sprint-runner-sneakers-687995-widn5-9061.html">
+            <img src="https://cdn2.jomashop.com/media/catalog/product/a/l/alexander-mcqueen-white-sprint-runner-sneakers-687995-widn5-9061_1.jpg" alt="shopping">
+            <h3>Alexander Mcqueen</h3>
+            <p>$379.99</p>
+            <button>Buy now</button>
+        </a>
+        <a href="https://fado.vn/deluxe/montblanc-ink-blue-sartorial-thin-leather-document-case-mb131715.html">
+            <img src="https://cdn2.jomashop.com/media/catalog/product/m/o/montblanc-ink-blue-sartorial-thin-leather-document-case-mb131715_1.jpg" alt="shopping">
+            <h3>Montblanc</h3>
+            <p>$1099.99</p>
+            <button>Buy now</button>
+        </a>
+        <a href="https://fado.vn/deluxe/gucci-watch-ya142305.html">
+            <img src="https://cdn2.jomashop.com/media/catalog/product/g/u/gucci-gg2570-black-dial-watch-ya142305.jpg" alt="shopping">
+            <h3>Gucci</h3>
+            <p>$849.99</p>
+            <button>Buy now</button>
+        </a>
+        <a href="https://fado.vn/deluxe/balmain-monogrammed-cottont-shirt-bh0ef060bc43.html">
+            <img src="https://cdn2.jomashop.com/media/catalog/product/b/a/balmain-monogrammed-cottontshirt-bh0ef060bc43_full-bleed.jpg" alt="shopping">
+            <h3>Balmain</h3>
+            <p>$459.99</p>
+            <button>Buy now</button>
+        </a>
+        <a href="https://fado.vn/de/amazon/playstation5-konsole-digital-edition-slim-B0CLTBHXWQ.html">
+            <img style=" width: 250px;height: 220px;" src="https://images-na.ssl-images-amazon.com/images/I/51eoU0cs2VL.jpg" alt="shopping">
+            <h3>PlayStation®5 Konsole Digital-Edition (Slim)</h3>
+            <p>$479.99</p>
+            <button>Buy now</button>
+        </a>
+      </div>
+      <div class="container">
+        <div style="text-align: center">
+            <div class="image w3-round"></div>
+            <p class="profession"><span class="w3-padding w3-margin" style="font-weight: bolder; color: #fdf5e6">My<span style="color: #ffcc66">Market</span></span></p>
+            <p class="bio"><span class="w3-padding w3-margin" style="font-weight: bolder; color: #fdf5e6">Like AMAZON</span></p><br>
+        </div>
+      <div class="contact">
+            <p class=""><span class="w3-padding w3-margin" style="font-weight: bolder; color: #fdf5e6">CONTACT US</span></p>
+            <div id="icon">
+              <a href="https://x.com/i/flow/login" class="icon"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/" class="icon"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/" class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://www.google.com/intl/vi/gmail/about/" class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+            </div>
+            <div id="footer">
+                <p>©Copyright from opening source</p>
+            </div>
+      </div>
+      <div class="contact">
+        <p class=""><span class="w3-padding w3-margin" style="font-weight: bolder; color: #fdf5e6">Find us</span></p>
+        <iframe src="https://maps.google.com/maps?q=HCMCity,+Njemačka&output=embed" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+</body>
+</html>

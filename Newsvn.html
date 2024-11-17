@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #Menu{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            margin-left: -10px;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 10px;
+            align-items: center;
+            background-color: rgba(46, 46, 46, 0.911);
+            border-radius: 10px;
+            z-index: 1000;
+        }
+        #Menu a{
+            text-decoration: none;
+            color: white;
+        }
+        #Menu1 a{
+            padding-left: 20px;
+        }
+        #Menu1{
+          margin-right: 100px;
+        }
+        #Signin{
+          position: relative;
+            left: -15px;
+            background-color: rgb(49, 55, 56);
+            border-radius: 10px;
+        }
+        #Login{
+          position: relative;
+            left: -15px;
+            background-color: rgb(3, 37, 44);
+            border-radius: 10px;
+        }
+        #Lastestnews{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 100px;
+        }
+        img{
+            width: 80%;
+            height: 80%;
+            border-radius: 10px;
+        }
+        #Lastestnews a{
+            text-decoration: none;
+            background-color: rgba(61, 54, 54, 0.911);
+            color: #000;
+            margin: 0 10px; 
+            width: 33.3%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        #Lastestnews a:hover{
+          color: white;
+          background-color: #eca10c;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.25);
+        }
+        #Lastestnews img:hover{
+            width: 380px;
+            height: 200px;
+        }
+        .container {
+          width: 100%;
+          height: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-right: auto;
+          margin-left: auto;
+          border-radius: 10px;
+        background: #232526;
+        background: -webkit-linear-gradient(to right, #414345, #232526);
+        background: linear-gradient(to right, #414345, #232526);
+        }
+        .image {
+          background-image: url("https://spaces.w3schools.com/images/iLNPS0N_6J4.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center; 
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          margin: 0 auto;
+          border: 5px solid #fdf5e6;
+        }
+        .w3-border {
+          border: 3px solid #ccc !important;
+        }
+        .contact {
+          text-align: center;
+          color: #fdf5e6;
+        }
+        .contact .info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 15px;
+        }
+
+        .contact .info span {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+        }
+
+        .bio {
+          font-size: 11px;
+          text-align: center;
+        }
+        @media screen and (min-width: 768px) {
+          .link {
+            width: 100%;
+          }
+        }
+        @media screen and (min-width: 576px) {
+          .container {
+            max-width: 540px;
+          }
+          .profession span {
+            font-size: 24px;
+          }
+          .bio {
+            font-size: 15px;
+          }
+        }
+        #icon{
+            text-align: center;
+        }
+        .icon{
+            color: black;
+        }
+        #footer{
+            text-align: center;
+        }
+        iframe{
+          border-radius: 20px;
+          margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+  <div id="Menu">
+    <p>
+      <h2 style="color: #ffffff;">IS<span style="color: #ffcc66">GameMarket</span></h2>
+    </p>
+      <p id="Menu1">
+          <a href="isgamemarketvn.html"><i class="fa fa-home" aria-hidden="true"></i> Trang chủ</a>
+          <a href="newsvn.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Thông tin</a>
+          <a href="marketvn.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Sản phẩm</a>
+          <a href="languagevn.html"><i class="fa fa-globe" aria-hidden="true"></i> Ngôn ngữ</a>
+          <a href="myaccountvn.html"><i class="fa fa-address-book-o" aria-hidden="true"></i> Tài khoản của tôi</a>
+      </p>
+      <p>
+          <button id="Signin"><a href="signinvn.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Đăng kí</a></button>
+          <button id="Login"><a href="loginvn.html"><i class="fa fa-sign-in" aria-hidden="true" style="color: #414345;"></i> Đăng nhập</a></button>
+      </p>
+  </div>
+    <div class="video-container">
+      <video autoplay muted loop id="background-video">
+          <source src="1722969-uhd_3840_2160_25fps.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+  </div>
+    <div id="content9">
+      <div id="Lastestnews">
+        <a href="https://www.msn.com/vi-vn/news/techandscience/nh%E1%BB%AFng-lo%E1%BA%A1i-m%C3%A1y-ch%C6%A1i-game-c%E1%BA%A7m-tay-%C4%91%C3%A1ng-ch%C3%BA-%C3%BD-n%C4%83m-2024/ar-AA1oYiFQ?ocid=msedgdhp&pc=U531&cvid=94a07cd542774cdba1df2684a376ec79&ei=49">
+            <img src="https://th.bing.com/th?id=ORMS.1bb26f04f92b179a7a58a62542c3f245&pid=Wdp&w=268&h=140&qlt=90&c=1&rs=1&dpr=1.5&p=0" alt="Games">
+            <h3>Những loại máy chơi game cầm tay đáng chú ý năm 2024</h3>
+            <p>bao gồm các loại máy như:"nitendo switch,Ps5,... xem tiếp</p>
+        </a>
+        <a href="https://www.yahoo.com/tech/star-wars-outlaws-maker-defends-093940049.html">
+            <img src="https://s.yimg.com/ny/api/res/1.2/_OUc1V6CC_DPLDmKJmUG.w--/YXBwaWQ9aGlnaGxhbmRlcjt3PTE5NTI7aD0xMDk4O2NmPXdlYnA-/https://media.zenfs.com/en/bbc_us_articles_995/e2ffbd6d459b5cb7ea15804dba823cab" alt="Games">
+            <h3>Star Wars Outlaws maker defends glitches in 'complex' game</h3>
+            <p>Andrew Rogers & Manish Pandey - BBC Newsbeat
+                Thu, August 29, 2024 at 4:39 PM GMT+7</p>
+        </a>
+        <a href="https://techround.co.uk/other/how-gamelight-revolutionising-mobile-game-user-acquisition-ai-innovation/">
+            <img src="https://techround.co.uk/wp-content/uploads/2024/08/digital-information-world.png" alt="Games">
+            <h3>How Gamelight is Revolutionising Mobile Game User Acquisition With AI Innovation</h3>
+            <p>TechRound Team
+                August 28, 2024</p>
+        </a>
+        <a href="https://www.msn.com/en-us/news/technology/google-trains-a-genai-model-to-simulate-doom-s-game-engine-in-real-ish-time/ar-AA1pBqp6?ocid=BingNewsVerp">
+            <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1pBokT.img?w=768&h=582&m=6" alt="Games">
+            <h3>Google trains a GenAI model to simulate DOOM's game engine in real-ish time</h3>
+            <p>Story by Tobias Mann • 16h</p>
+        </a>
+        <a href="https://www.msn.com/en-us/news/technology/space-marine-2-s-lead-dev-says-more-games-can-trace-their-dna-back-to-40k-than-people-might-think-many-young-gamers-probably-don-t-realize-the-influence-it-had-on-your-favorite-game/ar-AA1pBED3?ocid=BingNewsVerp">
+            <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1oJ7f3.img?w=768&h=432&m=6" alt="Games">
+            <h3>Space Marine 2's lead dev says more games can trace their DNA back to 40K than people might think: 'Many young gamers probably don't realize the influence it had</h3>
+            <p>Story by Lincoln Carpenter • 15h</p>
+        </a>
+        <a href="https://www.sortiraparis.com/en/what-to-do-in-paris/gaming/articles/259122-video-games-our-selection-of-gaming-releases-for-september-2024">
+            <img src="https://th.bing.com/th?id=OVFT._Ts4mjrQrwmBaE3Ut6Di4C&pid=News&w=234&h=132&c=14&rs=2&qlt=90&dpr=1.5" alt="Games">
+            <h3>Video games: our selection of gaming releases for September 2024</h3>
+        </a>
+        <a href="https://www.msn.com/en-xl/africa/kenya/chinese-video-game-hit-black-myth-sells-10-mn-copies-in-three-days/ar-AA1pknqK?ocid=BingNewsVerp">
+            <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1pkBMO.img?w=768&h=512&m=6" alt="Games">
+            <h3>Chinese video game hit 'Black Myth' sells 10 mn copies in three days</h3>
+            <p>Story by AFP • 5d</p>
+        </a>
+        <a href="https://www.yahoo.com/news/local-designer-creates-video-game-024743448.html">
+            <img src="https://s.yimg.com/ny/api/res/1.2/I8MEXPaWwS8UDm6daPe1rQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTE4MDA7aD0xMDEwO2NmPXdlYnA-/https://media.zenfs.com/en/wroc_rochester_articles_306/66e1a58b464c43b051f88e30dc1bf36f" alt="Games">
+            <h3>Local designer creates video game despite setback</h3>
+            <p>Caleb Carr
+                Thu, August 29, 2024 at 9:47 AM GMT+7</p>
+        </a>
+    </div>
+    <br><br><br><br><br>
+    <div class="container">
+      <div style="text-align: center">
+          <div class="image w3-round"></div>
+          <p class="profession"><span class="w3-padding w3-margin" style="font-weight: bolder; color: #fdf5e6">IS<span style="color: #ffcc66">GameMarket</span></span></p>
+          <p class="bio"><span class="w3-padding w3-margin" style="font-weight: bolder; color: #fdf5e6">GAME SOFTWARE DEVELOPMENT</span></p><br>
+      </div>
+    <div class="contact">
+          <p class=""><span class="w3-padding w3-margin" style="font-weight: bolder; color: #fdf5e6">Thông tin liên hệ của chúng tôi</span></p>
+          <div id="icon">
+            <a href="https://x.com/i/flow/login" class="icon"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/" class="icon"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/" class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.google.com/intl/vi/gmail/about/" class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+          </div>
+          <div id="footer">
+              <p>©Copyright from opening source</p>
+          </div>
+    </div>
+    <div class="contact">
+      <p class=""><span class="w3-padding w3-margin" style="font-weight: bolder; color: #fdf5e6">Cơ sở của chúng tôi</span></p>
+      <iframe src="https://maps.google.com/maps?q=HCMCity,+Njemačka&output=embed" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    </div>
+</body>
+</html>
